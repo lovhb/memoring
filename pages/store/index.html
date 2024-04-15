@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <title>MEMORING - STORE</title>
+  <link rel="icon" href="../../bilder/logo.png">
+  <link rel="stylesheet" href="../../css/css_index.css">
+  <link rel="stylesheet" href="./store.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="header">
+    <a href="../../" class="header-logo">
+      <h1 class="header-title">MEMORING</h1>
+    </a>
+    <div class="header-tabs">
+      <a href="../store/">Store</a>
+      <a href="../news/">News</a>
+      <a href="../aboutus/">About us</a>
+      <a href="../contact/">Contact</a>
+    </div>
+    <div class="order-button-pos">
+      <button id="order-button" onclick="window.location.href='../cart/'">
+        <img style="vertical-align: middle;" src="../../bilder/cart.svg" alt="cart-svg">
+        <span style="vertical-align: middle;">Cart <span class="cart-number">0</span></span>
+      </button>
+    </div>
+  </div>
+
+  <h1 class="page-title">Customize & Order</h1>
+
+  <main class="container">
+
+    <!-- Left Column / Ring Image -->
+    <div class="left-column">
+      <img data-image="Titanium" class="active" src="./bilder/titanium.png" alt="">
+      <img data-image="Gold" src="./bilder/gold.png" alt="">
+      <img data-image="Rose" src="./bilder/rose.png" alt="">
+      <img data-image="Black" src="./bilder/black.png" alt="">
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+
+      <!-- Product Description -->
+      <div class="product-description">
+        <span>products/ring</span>
+        <h1>NoteRing&trade;</h1>
+        <p>Capture ideas on the fly with NoteRing's discreet built-in microphone, revolutionizing how you preserve
+          inspiration. Seamlessly integrated into your daily life, MemoRing ensures no brilliant thought goes
+          unrecorded.</p>
+      </div>
+
+      <!-- Product Configuration -->
+      <div class="product-configuration">
+
+        <!-- Product Color -->
+        <div class="product-color">
+          <span>Color</span>
+
+          <div class="color-choose">
+            <div>
+              <input data-image="Titanium" type="radio" id="titanium" name="color" value="Titanium" checked>
+              <label for="titanium"><span></span></label>
+            </div>
+            <div>
+              <input data-image="Gold" type="radio" id="gold" name="color" value="Gold">
+              <label for="gold"><span></span></label>
+            </div>
+            <div>
+              <input data-image="Rose" type="radio" id="rose" name="color" value="Rose">
+              <label for="rose"><span></span></label>
+            </div>
+            <div>
+              <input data-image="Black" type="radio" id="black" name="color" value="Black">
+              <label for="black"><span></span></label>
+            </div>
+
+          </div>
+
+          <!-- Version Configuration -->
+          <div class="version-config">
+            <span>Version</span>
+
+            <div class="version-choose">
+              <button data-price="349" data-version="Lite" id="lite">Lite</button>
+              <button data-price="399" data-version="Standard" id="standard" class="active">Standard</button>
+              <button data-price="499" data-version="Pro" id="pro">Pro</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="product-price">
+          <span>---</span>
+          <a href="#" class="cart-btn">Add to cart</a>
+        </div>
+      </div>
+  </main>
+
+  <!-- Jämför modeller -->
+  <div class="compare">
+    <h1 class="compare-title">Compare Models</h1>
+    <table>
+      <tr>
+        <th width="300px">
+          <select id="select1" onchange="item1(this.value)">
+            <option value="0">-- Select --</option>
+          </select>
+        </th>
+        <th width="300px">
+          <select id="select2" onchange="item2(this.value)">
+            <option value="0">-- Select --</option>
+          </select>
+        </th>
+      </tr>
+      <tr>
+        <td class="comparebox">
+          <img src="./bilder/placeholder.png" id="img1" alt=" ">
+        </td>
+        <td class="comparebox">
+          <img src="./bilder/placeholder.png" id="img2" alt=" ">
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: center; padding: 1em 0 1em 0;" colspan="2">Price</th>
+      </tr>
+      <tr>
+        <td id="price1">N/A</td>
+        <td id="price2">N/A</td>
+      </tr>
+      <tr>
+        <th style="text-align: center; padding: 1em 0 1em 0;" colspan="2">Description</th>
+      </tr>
+      <tr>
+        <td class="table-padding" id="desc1">N/A</td>
+        <td class="table-padding" id="desc2">N/A</td>
+      </tr>
+      <tr>
+        <th style="text-align: center; padding: .5em 0 1em 0;" colspan="2">Specs</th>
+      </tr>
+      <tr>
+        <td class="table-padding" id="specs1">N/A</td>
+        <td class="table-padding" id="specs2">N/A</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+<script src="./js/store.js"></script>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Contact Us</h3>
+      <p style="font-size: medium;">Simlångsvägen 26, Årsta</p>
+      <a href="mailto:lovhol23@varmdogymnasium.se">lovhol23@varmdogymnasium.se</a>
+    </div>
+    <div class="footer-partner">
+      <h3>Partners</h3>
+      <ul>
+        <li>
+          <a href="" target=”_blank”>BeatWave</a>
+        </li>
+        <li>
+          <a href="https://labb.vgy.se/~seaast23/ovningar/projectforetag.html" target=”_blank”>MMA &amp; RACING INC</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <ul>
+        <li>
+          <a href="" target=”_blank”>Facebook</a>
+        </li>
+        <li>
+          <a href="" target=”_blank”>Instagram</a>
+        </li>
+        <li>
+          <a href="" target=”_blank”>Twitter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p style="font-size: small;">Copyright &copy; 2024 MemoRing, AB. All rights reserved</p>
+  </div>
+</footer>
+
+</html>
+
+<!-- Jämför script samt databas för produkter -->
+<script src="./src/data.js"></script>
+<script src="./js/compare.js"></script>

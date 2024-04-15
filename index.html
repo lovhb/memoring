@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>MEMORING - HOME</title>
+    <link rel="icon" href="./bilder/logo.png">
+    <link rel="stylesheet" href="./css/css_index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigationsfält -->
+    <div class="header">
+        <a href="./" class="header-logo">
+            <h1 class="header-title">MEMORING</h1>
+        </a>
+        <div class="header-tabs">
+            <a href="./pages/store/">Store</a>
+            <a href="./pages/news/">News</a>
+            <a href="./pages/aboutus/">About us</a>
+            <a href="./pages/contact/">Contact</a>
+        </div>
+        <div class="order-button-pos">
+            <button id="order-button" onclick="window.location.href='./pages/cart/'">
+                <img style="vertical-align: middle;" src="./bilder/cart.svg" alt="cart-svg">
+                <span style="vertical-align: middle;">Cart <span class="cart-number">0</span></span>
+            </button>
+        </div>
+    </div>
+    <!-- Video Bakgrund -->
+    <video autoplay muted loop id="main-video">
+        <source type="video/webm" src="./videos/ring-transparent.webm">
+    </video>
+    <script>
+        document.getElementById('main-video').play();
+    </script>
+    <div class="overlay">
+        <h2 class="page-title"><em>NoteRing&#8482;</em><br><span style="color: gray;">A whole new way of taking
+                notes.</span></h2>
+    </div>
+    <!-- Huvudinnehåll -->
+    <div class="maindiv">
+        <p>Introducing the future of note-taking: Our sleek and stylish NoteRing is your portable assistant for
+            capturing ideas on the go. With a built-in microphone and seamless integration with our app, effortlessly
+            record your thoughts as audio or convert them to text with speech-to-text technology. Stay organized and
+            inspired as your ideas are securely saved to your smartphone, ready to access whenever creativity strikes.
+            Elevate your productivity and never miss a moment of inspiration with our innovative SmartRing.</p>
+        <br>
+        <div style="text-align: center; width: 100%;">
+            <img id="horizontal-img" src="./bilder/ring-horizontal.png" alt="notering-horizontal">
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p style="font-size: medium;">Simlångsvägen 26, Årsta</p>
+            <a href="mailto:lovhol23@varmdogymnasium.se">lovhol23@varmdogymnasium.se</a>
+        </div>
+        <div class="footer-partner">
+            <h3>Partners</h3>
+            <ul>
+                <li>
+                    <a href="" target=”_blank”>BeatWave</a>
+                </li>
+                <li>
+                    <a href="https://labb.vgy.se/~seaast23/ovningar/projectforetag.html" target=”_blank”>MMA &amp;
+                        RACING INC</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>
+                    <a href="" target=”_blank”>Facebook</a>
+                </li>
+                <li>
+                    <a href="" target=”_blank”>Instagram</a>
+                </li>
+                <li>
+                    <a href="" target=”_blank”>Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="font-size: small;">Copyright &copy; 2024 MemoRing, AB. All rights reserved</p>
+    </div>
+</footer>
+
+<script src="./pages/store//js/store.js"></script>
+
+</html>

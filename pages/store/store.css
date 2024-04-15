@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Maven+Pro&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body {
+    background: linear-gradient(rgba(0,0,0,1) 0%, rgb(37, 0, 146) 100%);
+}
+
+.page-title {
+  margin-bottom: 0;
+}
+
+.compare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  margin-top: 10em;
+}
+
+.comparebox {
+  background-color: transparent;
+}
+
+.compare-title {
+  font-family: 'Reddit Mono', monospace;
+  margin-right: 15%;
+  margin-left: 15%;
+  font-size: 4vw;
+  color: white;
+  font-size: 2em;
+}
+
+td>img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+tr td {
+  vertical-align: top;
+}
+
+table {
+  font-family: 'Maven Pro', sans-serif;
+}
+ 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+/* Columns */
+.left-column {
+  width: 65%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+}
+
+/* Left Column */
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+ 
+.left-column img.active {
+  opacity: 1;
+}
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-family: 'Reddit Mono', monospace;
+  font-size: 52px;
+  color: white;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  line-height: 24px;
+}
+
+/* Product Color */
+.product-color {
+  margin-bottom: 30px;
+}
+
+.product-color span {
+  font-family: 'Reddit Mono', monospace;
+  font-size: 18px;
+}
+
+.color-choose {
+  margin-bottom: 10px;
+}
+ 
+.color-choose div {
+  margin-top: 10px;
+  display: inline-block;
+}
+ 
+.color-choose input[type="radio"] {
+  display: none;
+}
+ 
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+ 
+.color-choose input[type="radio"]#titanium + label span {
+  background-color: #B9C1D9;
+}
+.color-choose input[type="radio"]#gold + label span {
+  background-color: #ffc248;
+}
+.color-choose input[type="radio"]#rose + label span {
+  background-color: #F7CAC9;
+}
+.color-choose input[type="radio"]#black + label span {
+  background-color: #333333;
+}
+ 
+.color-choose input[type="radio"]:checked + label span {
+  background-image: url(./bilder/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Version Configuration */
+.version-choose {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+ 
+.version-choose button {
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: all .5s;
+}
+ 
+.version-choose button:hover,
+.version-choose button:focus {
+  border: 2px solid rgb(64, 0, 255);
+  background-color: rgb(205, 196, 255);
+  outline: none;
+}
+
+.version-choose button.active {
+  border: 2px solid rgb(64, 0, 255);
+  background-color: rgb(205, 196, 255);
+}
+ 
+.version-config {
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+ 
+.version-config a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+ 
+.version-config a:before {
+  content: "?";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+.version-config span {
+  font-family: 'Reddit Mono', monospace;
+  font-size: 18px;
+}
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: white;
+  margin-right: 20px;
+  font-family: 'Reddit Mono', monospace;
+}
+ 
+.cart-btn {
+  display: inline-block;
+  background-color: rgb(64, 0, 255);
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+  font-family: 'Reddit Mono', monospace;
+}
+.cart-btn:hover {
+  background-color: rgb(0, 0, 255);
+}
+
+/* Responsive */
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+ 
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+ 
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+  .page-title {
+    margin-top: 6em;
+  }
+}
+ 
+@media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -85px;
+  }
+}

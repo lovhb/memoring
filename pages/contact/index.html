@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORING - STORE</title>
+    <link rel="icon" href="../../bilder/logo.png">
+    <link rel="stylesheet" href="../../css/css_index.css" />
+    <link rel="stylesheet" href="./contact.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <div class="header" id="header">
+        <a href="../../" class="header-logo">
+            <h1 class="header-title">MEMORING</h1>
+        </a>
+        <div class="header-tabs">
+            <a href="../store/">Store</a>
+            <a href="../news/">News</a>
+            <a href="../aboutus/">About us</a>
+            <a href="../contact/">Contact</a>
+        </div>
+        <div class="order-button-pos">
+            <button id="order-button" onclick="window.location.href='../cart/'">
+                <img style="vertical-align: middle;" src="../../bilder/cart.svg" alt="cart-svg">
+                <span style="vertical-align: middle;">Cart <span class="cart-number">0</span></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Sidans innehåll -->
+    <h1 class="page-title">Contact Us</h1>
+
+    <div class="maindiv">
+        <p>
+            For inquiries, feedback, or support, please feel free to reach out to us. We value your input and are
+            committed to providing exceptional service to our customers. Whether you have questions about our products,
+            need assistance with your order, or simply want to share your thoughts with us, we are here to help.
+        </p>
+        <br>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="10" cols="50"></textarea>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <p>
+            You can also contact us via email at <a href="mailto:lovhol23@varmdogymnasium.se">lovhol23@varmdogymnasium.se</a><br>
+            We look forward to hearing from you and will respond to your inquiry as soon as possible.
+        </p>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p style="font-size: medium;">Simlångsvägen 26, Årsta</p>
+            <a href="mailto:lovhol23@varmdogymnasium.se">lovhol23@varmdogymnasium.se</a>
+        </div>
+        <div class="footer-partner">
+            <h3>Partners</h3>
+            <ul>
+                <li>
+                    <a href="" target=”_blank”>BeatWave</a>
+                </li>
+                <li>
+                    <a href="https://labb.vgy.se/~seaast23/ovningar/projectforetag.html" target=”_blank”>MMA &amp;
+                        RACING INC</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>
+                    <a href="" target=”_blank”>Facebook</a>
+                </li>
+                <li>
+                    <a href="" target=”_blank”>Instagram</a>
+                </li>
+                <li>
+                    <a href="" target=”_blank”>Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="font-size: small;">Copyright &copy; 2024 MemoRing, AB. All rights reserved</p>
+    </div>
+</footer>
+
+<script src="../store/js/store.js"></script>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <title>MEMORING - CART</title>
+  <link rel="icon" href="../../bilder/logo.png">
+  <link rel="stylesheet" href="../../css/css_index.css">
+  <link rel="stylesheet" href="./cart.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="header">
+    <a href="../../" class="header-logo">
+      <h1 class="header-title">MEMORING</h1>
+    </a>
+    <div class="header-tabs">
+      <a href="../store/">Store</a>
+      <a href="../news/">News</a>
+      <a href="../aboutus/">About us</a>
+      <a href="../contact/">Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Title -->
+  <h1 class="page-title">Cart & Checkout</h1>
+  <div class="main-container">
+    <div class="order-container">
+      <!-- Cart Content -->
+    <div class="cart-content">
+
+      <h1 style="font-family: 'Reddit Mono';">Your Cart</h1>
+
+      <div class="cart-items">
+        <!-- Cart items will be displayed here -->
+      </div>
+
+      <div class="cart-total">
+        <p>Total: $<span id="total-amount">0.00</span></p>
+      </div>
+
+    </div>
+    <div class="checkout">
+      <h2>Checkout</h2>
+      <form method="post" action="https://labb.vgy.se/~tobiashg/recform/recform.php">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Billing Address</h3>
+
+            <div class="inputbox">
+              <span>Full Name :</span>
+              <input type="text" placeholder="Your Name" name="name">
+            </div>
+            <div class="inputbox">
+              <span>E-Mail :</span>
+              <input type="email" placeholder="Your E-Mail" name="email">
+            </div>
+            <div class="inputbox">
+              <span>Address :</span>
+              <input type="text" placeholder="Your Address" name="address">
+            </div>
+            <div class="inputbox">
+              <span>City :</span>
+              <input type="text" placeholder="Your City" name="city">
+            </div>
+
+            <div class="flex">
+              <div class="inputbox">
+                <span>Zip Code :</span>
+                <input type="text" placeholder="Your Zip Code" name="zip">
+              </div>
+              <div class="inputbox">
+                <span>Country :</span>
+                <input type="text" placeholder="Your Country" name="country">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="title">Payment</h3>
+
+            <div class="inputbox">
+              <span>Card Number :</span>
+              <input type="text" placeholder="Your Card Number" name="cardNumber">
+            </div>
+            <div class="inputbox">
+              <span>Card Holder :</span>
+              <input type="text" placeholder="Your Card Holder" name="cardHolder">
+            </div>
+
+            <div class="inputbox">
+              <span>Exp. Date :</span>
+              <input type="text" placeholder="MM/YY" name="expDate">
+            </div>
+            <div class="inputbox">
+              <span>CVC :</span>
+              <input type="text" placeholder="CVC" name="cvc">
+            </div>
+
+            <input type="password" name="pw" placeholder="Lösen webbserver" size="15">
+            <input type="hidden" name="s_email" value="lovhol23@varmdogymnasium.se">
+            <input type="hidden" name="s_return" value="https://labb.vgy.se/~lovhol23/projekt/MemoRing/pages/cart/order-confirm.html">
+
+
+            <button type="submit">Place Order</button>
+          </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Contact Us</h3>
+        <p style="font-size: medium;">Simlångsvägen 26, Årsta</p>
+        <a href="mailto:lovhol23@varmdogymnasium.se">lovhol23@varmdogymnasium.se</a>
+      </div>
+      <div class="footer-partner">
+        <h3>Partners</h3>
+        <ul>
+          <li>
+            <a href="" target="_blank">BeatWave</a>
+          </li>
+          <li>
+            <a href="https://labb.vgy.se/~seaast23/ovningar/projectforetag.html" target="_blank">MMA &amp; RACING
+              INC</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>
+            <a href="" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p style="font-size: small;">Copyright &copy; 2024 MemoRing, AB. All rights reserved</p>
+    </div>
+  </footer>
+  <!-- Script for managing the cart -->
+  <script src="./js/cart.js"></script>
+</body>
+
+</html>

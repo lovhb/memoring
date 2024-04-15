@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+.post {
+  font-family: 'Reddit mono', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid white;
+}
+
+.post p {
+  margin: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    width: 75%;
+  }
+  .post p {
+    font-size: small;
+  }
+  .page-title {
+    margin-top: 6em;
+  }
+  
+}
